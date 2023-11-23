@@ -19,5 +19,5 @@ jobs:
             cd /home/ubuntu/example-voting-app
             sudo git checkout main
             sudo git pull origin main
-            sudo docker compose up 
+            sudo docker compose up -d
             '
