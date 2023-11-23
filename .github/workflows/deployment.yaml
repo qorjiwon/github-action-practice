@@ -17,7 +17,7 @@ jobs:
           echo "$PRIVATE_KEY" > private_key && chmod 400 private_key
           ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
             cd /home/ubuntu/example-voting-app
-            git checkout main
-            git pull origin main
-            docker compose up 
+            sudo git checkout main
+            sudo git pull origin main
+            sudo docker compose up 
             '
